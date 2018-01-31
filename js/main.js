@@ -4,7 +4,7 @@ var zaposleniBaza = "http://services.odata.org/V3/Northwind/Northwind.svc/Orders
 var sviZaposleni = [];
 
 function getServiceData(url,username, password) {
-    
+
         try {
         var result;
             var xmlhttp = new XMLHttpRequest();
@@ -22,7 +22,7 @@ function getServiceData(url,username, password) {
             xmlhttp.send();
             return result;
         }
-        catch (err) {       
+        catch (err) {
             return err;
         }
 }
@@ -56,7 +56,7 @@ function login() {
     if (userOk == false) {
         poruka.innerHTML = "Pogresno ime ili lozinka!";
         return;
-    } else {        
+    } else {
         sessionStorage.setItem("userOk", true);
         novaStrana();
     }
@@ -100,8 +100,8 @@ var vrednostLink = "&value=";
 konvertuj();
 
 
-function konvertuj() {  
-    
+function konvertuj() {
+
     var selektovanaValuta = document.getElementById('selectValuta').value;
     var inputIznos = document.getElementById('inputIznos').valueAsNumber;
     var ceoLink = valutaLink + selektovanaValuta + vrednostLink + inputIznos;
@@ -112,3 +112,22 @@ function konvertuj() {
 
 }
 
+
+
+// smooth scroll
+
+$(document).ready(function() {
+      $('a').on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+              scrollTop: $(hash).offset().top
+          }, 800, function() {
+            window.location.hash = hash;
+          });
+        }
+      });
+});
