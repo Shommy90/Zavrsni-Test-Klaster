@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>plantEKO</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="wrapper clr">
+                <div class="logo fl">
+                    <a href="#"> <img src="images/logo.png" alt="logo"> </a>
+                </div><!--logo-->
+
+                <div class="navigation fr">
+                    <nav>
+                      <ul>
+                          <li> <a href="#o-proizvodu">O proizvodu</a> </li>
+                          <li> <a href="#newsletter">Newsletter</a> </li>
+                          <li> <a href="#kontakt">Kontakt</a> </li>
+                      </ul>
+                    </nav>
+
+                    <div class="login-btn">
+                        <a href="#login">PRIJAVI SE</a>
+                    </div><!--login-btn-->
+                </div><!--navigatoin-->
+            </div><!--wrapper-->
+        </header>
+
+
+        <div class="home">
+            <div class="wrapper">
+                <div class="home-content">
+                    <div class="home-title">
+                        <img src="images/sinomel.png" alt="title">
+                    </div><!--home-title-->
+
+                    <div class="home-subtitle">
+                        <h2>Najbolje rešenje za vaše <br>
+                           probleme sa sinusima</h2>
+                    </div><!--home-subtitle-->
+                </div><!--home-content-->
+            </div><!--wrapper-->
+        </div><!--home-->
+
+
+
+        <div class="melem">
+            <div class="wrapper">
+                <div class="melem-title">
+                    <h3>Korišćenjem melema rešićete vaše probleme sa sinusima na prirodan način,
+                      bez korišćenja antibiotika, kortikosteroida i ostalih lekova</h3>
+                </div><!--melem-title-->
+
+                <div class="melem-info">
+                    <div class="melem-info-list">
+                        <p>Otklanja zapaljenje i otok</p>
+                        <p>Ublažava pritisak i bol u glavi </p>
+                        <p>Podstiče i olakšava pražnjenje sekreta iz nosa i sinusa</p>
+                        <p>Omogućava normalno disaje</p>
+                    </div><!--melem-info-list-->
+                </div><!--melem-info-->
+            </div><!--wrapper-->
+        </div><!--melem-->
+
+
+
+        <div class="melem-info-bg">
+            <div class="wrapper">
+                <p>Izrađen je od 100% prirodnih sastojaka vrhunskog kvaliteta, <br>
+                   ne sadrži veštačke supstance - hemikalije, aditive, antibiotike, <br>
+                    kortikosteroide, naftne derivate i slično, <br>
+                     koji su česti sastojci većine preparata.</p>
+            </div><!--wrapper-->
+        </div><!--melem-info-bg-->
+
+
+
+        <div id="o-proizvodu" class="sastojci">
+            <div class="wrapper">
+                <ul>
+                    <li>
+                        <div class="sastojci-img">
+                            <img src="images/first-picture-list.png" alt="sastojci img">
+                        </div><!--sastojci-img-->
+
+                        <div class="sastojci-tekst">
+                            <p>Lekoviti melem izrađen od čistog pčelinjeg voska i eteričnih ulja više vrsta pažljivo odabranih
+                              lekovitih biljaka, koje se u tradicionalnoj svetskoj medicini koriste vekovima,  sa provereno medicinski i naučno istraženim
+                              klinički dokazanim dejstvom</p>
+                        </div><!--sastojci-tekst-->
+                    </li>
+
+
+                    <li>
+                        <div class="sastojci-img">
+                            <img src="images/second-picture-llist.png" alt="sastojci img">
+                        </div><!--sastojci-img-->
+
+                        <div class="sastojci-tekst">
+                            <p>Fitoncidi-antimikrobni sastojci biljaka koji se koriste u izradi melema imaju svojstvo prirodnih biljnih antibiotika,
+                              koji uništavaju patogene ili štetne mikroorganizme i sprečavaju njihovo razmnožavanje.</p>
+                        </div><!--sastojci-tekst-->
+                    </li>
+
+
+                    <li>
+                        <div class="sastojci-img">
+                            <img src="images/three-picture-list.png" alt="sastojci img">
+                        </div><!--sastojci-img-->
+
+                        <div class="sastojci-tekst">
+                            <p>Preparati nastao kao rezultat viševekovnog praktičnog iskustva u spravljanju melema, koje se porodično nasleđivalo, usavršeno
+                              sa najnovijim svetskim naučnim i medicinskim istraživanjima, u saradnji sa eminentnim stručnjacima iz ove oblasti.</p>
+                        </div><!--sastojci-tekst-->
+                    </li>
+                </ul>
+            </div><!--wrapper-->
+        </div><!--sastojci-->
+
+
+
+        <div id="newsletter" class="newsletter">
+            <div class="wrapper">
+                <h2>Prijavi se na newsletter <br>
+                  i ostvarite dodatnih 20% popusta na naše usluge</h2>
+
+               <div class="prijava-dugme">
+                  <a href="#">PRIJAVA</a>
+               </div><!--prijava-dugme-->
+            </div><!--wrapper-->
+        </div><!--newsletter-->
+
+
+
+        <div id="login" class="valute-login">
+            <div class="valute-login-box">
+                <div class="valute">
+                    <h3>Konvertor</h3>
+
+                    <select id="selectValuta">
+                      <option value="EUR" selected>Euro</option>
+                      <option value="USD">Dolar</option>
+                      <option value="RUB">Rublja</option>
+                    </select>
+
+                    <input id="inputIznos" type="number" onkeyup="konvertuj();" value="1"> <br>
+
+                    <p id="rezultat"></p> 
+
+                    <button type="button" onclick="konvertuj()">Prevedi u Bitcoin</button>
+
+
+                </div><!--valute-->
+
+                <div class="login">
+                    <h3>Ulogujte se!</h3>
+
+                    <input id="ime" type="text" placeholder="Ime">
+                    <input id="pass" type="password" placeholder="Lozinka">
+                    <button id="btnLogin" type="button" onclick="login()">Login</button>
+                    <p style="color: red; margin-top: 10px;" id="poruka"></p>
+                </div><!--login-->
+
+            </div><!--valute-login-box-->
+        </div><!--valute-->
+
+
+
+        <div id="kontakt" class="poruci">
+            <div class="wrapper">
+                <div class="poruci-forma">
+                    <h2>Poruči odmah!</h2>
+
+                    <div class="forma">
+                        <form>
+                            <ul>
+                                <li>
+                                    <input type="text" placeholder="Ime i prezime">
+                                </li>
+
+                                <li>
+                                    <input type="text" placeholder="Adresa">
+                                </li>
+
+                                <li class="clr">
+                                    <input class="post-br fl" type="number" placeholder="Pošt. broj">
+                                    <input class="grad fr" type="text" placeholder="Grad">
+                                </li>
+
+                                <li>
+                                    <input type="number" placeholder="Broj telefona">
+                                </li>
+
+                                <li>
+                                    <input type="email" placeholder="E-mail adresa">
+                                </li>
+
+                                <li class="clr">
+                                    <div class="klikni-poruci fl">
+                                        <button type="button">Klikni i poruči</button>
+                                    </div><!--klikni-poruci-->
+
+                                    <div class="naruci-odmah fr">
+                                        <p>Naručite odmah:</p>
+                                        <p> <span>061 68 15 109</span> </p>
+                                    </div><!--naruci-odmah-->
+                                </li>
+                            </ul>
+                        </form>
+                    </div><!--forma-->
+                </div><!--poruci-forma-->
+            </div><!--wrapper-->
+
+
+            <footer>
+                <div class="wrapper clr">
+                    <div class="logo-footer fl">
+                        <a href="#"> <img src="images/logo_footer.png" alt="logo footer"> </a>
+                    </div><!--logo-footer-->
+
+                    <div class="login-btn fr">
+                        <a href="#login">PRIJAVI SE</a>
+                    </div><!--login-btn-->
+                </div><!--wrapper-->
+            </footer>
+        </div><!--poruci-->
+
+
+
+
+
+        <script type="text/javascript" src="js/main.js"></script>
+
+
+    </body>
+</html>

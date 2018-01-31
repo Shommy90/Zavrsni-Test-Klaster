@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+body {font-family: 'Open Sans'; background: #fff; color: #7f7d7e; }
+.wrapper {max-width: 1200px; width: 100%; margin: 0 auto;}
+.clr::after {clear: both; content: ''; display: table; }
+.fl {float: left;}
+.fr {float: right;}
+a {color: #7f7d7e; text-decoration: none;}
+div {box-sizing: border-box;}
+
+
+
+/****************************HEADER**/
+
+header {width: 100%; position: absolute; top: 0; left: 0; right: 0; background: #fff; height: 80px; padding-top: 20px; z-index: 999;}
+header .logo {height: 80px;}
+header .logo a {display: block;}
+header .logo a img {width: 100%;}
+header .navigation {height: 80px; line-height: 80px;}
+header .navigation nav {display: inline-block;}
+header .navigation nav ul li {display: inline-block; margin-right: 20px; }
+header .navigation nav ul li:last-child {margin-right: 0;}
+header .navigation nav ul li a {font-weight: 600; padding: 7px 0; transition: all .2s;}
+header .navigation nav ul li a:hover {border-top: 4px solid #b3c39b; border-bottom: 4px solid #b3c39b;}
+
+header .navigation .login-btn {display: inline-block; margin-left: 60px;}
+header .navigation .login-btn a {color: #fff; font-weight: 700; background: #93c34b; padding: 10px 40px 7px 40px; border-radius: 5px; border-bottom: 4px solid #65a123; transition: all .2s;}
+header .navigation .login-btn a:hover {opacity: .8;}
+
+
+
+
+/*********************HOME****/
+
+.home { width: 100%; background: url(../images/top-background.jpg)no-repeat center center; background-size: cover; }
+.home .wrapper {padding-top: 110px;}
+.home .home-content {width: 100%; height: 514px; background: url(../images/women.png)no-repeat center right; }
+.home .home-content .home-title {margin-bottom: 40px; width: 50%; text-align: center;}
+.home .home-content .home-title img {width: 100%;}
+.home .home-content .home-subtitle h2 {font-style: italic; color: #fff; font-size: 40px; font-weight: 400; width: 50%; text-align: center;}
+
+
+
+
+/******************MELEM**/
+
+.melem {width: 100%;}
+.melem .melem-title h3 {margin-bottom: 40px; text-align: center; margin-top: 30px; font-size: 32px; font-weight: 400; padding: 0 45px; line-height: 40px;}
+.melem .melem-info {width: 100%; min-height: 376px; background: url(../images/krema.png)no-repeat right center; display: flex; align-items: center;}
+.melem .melem-info .melem-info-list {width: 50%;}
+.melem .melem-info .melem-info-list p {padding-left: 70px; position: relative; font-size: 30px; text-transform: uppercase; font-weight: 700; margin-bottom: 30px; line-height: 40px;}
+.melem .melem-info .melem-info-list p::before {content: ""; position: absolute; left: 0; width: 28px; height: 26px; background: url(../images/check.png)no-repeat center center;}
+
+
+
+
+
+/*********************MELEM INFO BG**/
+
+.melem-info-bg {width: 100%; background: url(../images/three-background.jpg)no-repeat center center; background-size: cover;}
+.melem-info-bg p {color: #fff; font-size: 32px; line-height: 50px; padding: 75px 0; font-weight: 300; text-align: center;}
+
+
+
+
+/**********************SASTOJCI****/
+
+.sastojci {width: 100%; padding: 50px 0 70px 0;}
+.sastojci ul {width: 100%; text-align: center;}
+.sastojci ul li {max-width: 350px; width: 100%; display: inline-block; vertical-align: top; padding: 0 20px;}
+.sastojci ul li .sastojci-img {margin-bottom: 20px;}
+.sastojci ul li .sastojci-tekst p {font-style: italic; font-weight: 600; font-size: 16px; line-height: 20px; }
+
+
+
+/************************NEWSLETTER*/
+
+.newsletter {padding: 70px 0; width: 100%; background: url(../images/three-background.jpg)no-repeat center center; background-size: cover; color: #fff;}
+.newsletter h2 {text-transform: uppercase; text-align: center; font-size: 40px; line-height: 50px; font-weight: 600; margin-bottom: 50px;}
+.newsletter .prijava-dugme {display: block; text-align: center;}
+.newsletter .prijava-dugme a {color: #fff; font-weight: 700; background: #93c34b; padding: 10px 100px 7px 100px; border-radius: 5px; border-bottom: 4px solid #65a123; transition: all .2s; font-size: 22px;}
+.newsletter .prijava-dugme a:hover {opacity: .8;}
+
+
+
+/*******************VALUTE***/
+
+.valute-login {width: 100%; padding: 70px 0;}
+.valute-login .valute-login-box {text-align: center; margin: 0 auto; max-width: 600px; border: 2px solid #65a123; padding: 50px 0;}
+.valute h3 {margin-bottom: 10px;}
+.valute button {cursor: pointer; color: #fff; font-weight: 700; background: #93c34b; padding: 10px 20px 7px 20px; border-radius: 5px; border: none; border-bottom: 4px solid #65a123; transition: all .2s; margin-bottom: 15px;}
+.valute button:hover {opacity: .8;}
+.login {margin: 0 auto; margin-top: 50px; max-width: 300px; width: 100%; padding: 20px; box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);}
+.login h3 {margin-bottom: 20px;}
+.login input {text-align: center; width: 100%; height: 40px; box-sizing: border-box; padding: 0 15px; border-radius: 5px; border: none; border-bottom: 4px solid lightgrey;}
+.login button {cursor: pointer; margin-top: 20px; color: #fff; font-weight: 700; background: #93c34b; padding: 10px 40px 7px 40px; border-radius: 5px; border: none; border-bottom: 4px solid #65a123; transition: all .2s;}
+.login button:hover {opacity: .8;}
+
+#rezultat {font-size: 22px; font-weight: bold; position: relative; margin: 20px 0;}
+#rezultat::before {content: '₿ ';}
+.valute select, .valute option {background: #93c34b; color:  #fff; border: none; border-radius: 5px; width: 100px; font-size: 20px; cursor: pointer; padding: 5px 10px;}
+#inputIznos {font-weight: 600; width: 100px;  text-align: center; border: none; border-bottom: 3px solid #93c34b; font-size: 20px; color: #7f7d7e;}
+#selectValuta {margin-right: 15px;}
+
+
+
+
+/******************PORUCI*****/
+
+.poruci {padding: 50px 0 0 0; width: 100%; background: url(../images/contact-form-background.png)no-repeat center center; background-size: cover;}
+.poruci .poruci-forma {max-width: 400px; width: 100%; margin: 0 auto; }
+.poruci .poruci-forma h2 {text-align: center; font-size: 32px; font-weight: 700; color: #fff; font-style: italic; margin-bottom: 30px;}
+.poruci .poruci-forma .forma {width: 100%;}
+.poruci .poruci-forma .forma form {width: 100%;}
+.poruci .poruci-forma .forma form ul {width: 100%;}
+.poruci .poruci-forma .forma form ul li {width: 100%; margin-bottom: 15px;}
+.poruci .poruci-forma .forma form ul li:last-child {margin-bottom: 0;}
+.poruci .poruci-forma .forma form ul li input {width: 100%; height: 40px; box-sizing: border-box; padding: 0 15px; border-radius: 5px; border: none; border-bottom: 4px solid lightgrey;}
+.poruci .poruci-forma .forma form ul li input.post-br {width: 30%; display: inline-block;}
+.poruci .poruci-forma .forma form ul li input.grad {width: 65%; display: inline-block;}
+.poruci .poruci-forma .forma form ul li input::placeholder {font-style: italic;}
+
+.poruci .poruci-forma .forma form ul li .klikni-poruci button {transition: all .2s; cursor: pointer; border: none; color: #fff; font-weight: 700; background: #93c34b; padding: 10px 50px 7px 50px; border-radius: 5px; border-bottom: 4px solid #65a123; transition: all .2s; font-size: 22px;}
+.poruci .poruci-forma .forma form ul li .klikni-poruci button:hover {opacity: .8;}
+.poruci .poruci-forma .forma form ul li .naruci-odmah {text-align: left; color: #fff; padding-top: 5px;}
+.poruci .poruci-forma .forma form ul li .naruci-odmah p {font-weight: 300;}
+.poruci .poruci-forma .forma form ul li .naruci-odmah p span {font-weight: 700; font-size: 20px; letter-spacing: 1px;}
+
+
+
+/**********************FOOTER***/
+
+footer {width: 100%; margin-top: 100px; height: 80px; background: rgba(0,0,0, 0.4); box-sizing: border-box; height: 80px; line-height: 80px;}
+footer .logo-footer a {display: block;}
+footer .logo-footer img {width: 100%; vertical-align: middle;}
+footer .login-btn a { color: #fff; font-weight: 700; background: #93c34b; padding: 10px 40px 7px 40px; border-radius: 5px; border-bottom: 4px solid #65a123; transition: all .2s;}
+footer .login-btn a:hover {opacity: .8;}
